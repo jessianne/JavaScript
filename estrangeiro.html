@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estrangeiro</title>
+</head>
+<body>
+    <h1>Você é estrangeiro?</h1>
+    Digite o país:
+    <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var txt = window.document.querySelector('input#txt1');
+            var res = window.document.querySelector('div#res');
+            if(txt1 == `Brasil`){
+                res.innerHTML = `Você é brasileiro.`;
+            }else{
+                res.innerHTML = `Você é estrangeiro.`;
+            }
+        }
+    </script>
+</body>
+</html>
+<!--
+var país = 'EUA';
+console.log(`Vivendo no ${país}.`);
+    if (país == 'Brasil'){
+        console.log('Você é brasileiro.')
+    }else{
+        console.log('Você é estrangeiro.')
+    }-->
